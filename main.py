@@ -13,7 +13,7 @@ def epoch_time():
 def get_service():
     try:
         return str(epoch_time())
-    except KeyError:
+    except Exception:
         return 'There is a problem!'
 
 
